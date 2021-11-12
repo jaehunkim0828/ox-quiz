@@ -1,0 +1,159 @@
+html {
+  background-color: rgb(209, 230, 246);
+}
+
+#home-container {
+  background-image: url('./images/homeClear.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home-container button {
+  border: none;
+  background-color: #1F63AE;
+  cursor: pointer;
+}
+
+#home-container button img{
+  width: 10rem;
+}
+
+.quiz-container1 {
+  background-image: url('./images/background.png');
+  background-color: #00B186;
+  background-size: 100%;
+  height: 100vh;
+}
+
+.quiz-container2 {
+  background-image: url('./images/quiz2/quiz2.png');
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.templete1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.templete1 section img {
+  /* width: 4rem; */
+}
+
+.templete1-2 {
+  font-size: 2rem;
+  font-weight: 900;
+  color: white;
+}
+
+.templete1-2-img {
+  width: 3rem;
+}
+
+.templete1-3 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.templete1-3-center {
+  width: 40%;
+  margin: 0 10% 0 5%;
+}
+
+.templete1-3-side {
+  width: 15%;
+  position: relative;
+  bottom: 50%;
+  margin: 0 0 0 5%;
+}
+
+.templete1-4 {
+  font-size: 1rem;
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.templete1 section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.templete1 section img {
+  margin: 0 4%;
+  width: 20%;
+}
+
+.templete2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.templete2 section {
+  margin: 0 auto;
+}
+
+.templete2 section img {
+  
+}
+
+.templete2-3-center {
+  margin: 0 10%;
+  width: 20%;
+}
+
+.templete2-3-side {
+  margin: 10% 5%;
+  width: 20%;
+}
+
+
+
+/* tablet rules */
+
+@media screen and (min-width: 650px) {
+  #home-container button img{
+    width: 13rem;
+  }
+  .templete1-2 {
+    font-size: 3rem;
+  }
+
+  .templete1-4 {
+    font-size: 1.8rem;
+  }
+  
+}
+
+/* desktop rules */
+
+@media screen and (min-width: 1024px) {
+  #home-container button img{
+    width: 18rem;
+  }
+
+  .templete1-2 {
+    font-size: 4rem;
+  }
+
+  .templete1-4 {
+    font-size: 2.8rem;
+  }
+
+  /* .templete section img {
+    width: 16rem;
+  } */
+}
