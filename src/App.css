@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'score';
+  src: url('./fonts/CookieRunFont_OTF/CookieRun\ Bold.otf') format('truetype');
+}
+
 html {
   background-color: rgb(209, 230, 246);
 }
@@ -12,148 +17,270 @@ html {
   align-items: center;
 }
 
-#home-container button {
-  border: none;
-  background-color: #1F63AE;
+
+#home-container img{
+  width: 25%;
   cursor: pointer;
 }
 
-#home-container button img{
-  width: 10rem;
+.center {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.center img {
+  width: 20%;
+  cursor: pointer;
+}
+
+.end {
+  width: 80%;
+  display: flex;
+  justify-content: end;
+}
+.end img {
+  width: 15%;
+  cursor: pointer;
 }
 
 .quiz-container1 {
-  background-image: url('./images/background.png');
+  background-image: url('./images/quiz1/quiz1.png');
   background-color: #00B186;
-  background-size: 100%;
+  background-size: 100% 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quiz-container2 {
   background-image: url('./images/quiz2/quiz2.png');
   background-size: 100% 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.templete1 {
+.quiz-container3 {
+  background-image: url('./images/quiz3.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container4 {
+  background-image: url('./images/quiz4.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container5 {
+  background-image: url('./images/quiz5.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container6 {
+  background-image: url('./images/quiz6.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-container7 {
+  background-image: url('./images/quiz7.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container1 {
+  background-image: url('./images/quiz1/answer1.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container2 {
+  background-image: url('./images/quiz2/answer2.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container3 {
+  background-image: url('./images/answer3.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container4 {
+  background-image: url('./images/answer4.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container5 {
+  background-image: url('./images/answer5.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container6 {
+  background-image: url('./images/answer6.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-container7 {
+  background-image: url('./images/answer7.png');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  background-image: url('./images/background.png');
+  background-color: #1F63AE;
+  background-size: 200vh;
+  background-repeat: no-repeat;
+  font-family: 'score';
+  height: 100vh;
+  padding: 2%;
+}
+
+.result section {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 100%;
 }
 
-.templete1 section img {
-  /* width: 4rem; */
-}
-
-.templete1-2 {
-  font-size: 2rem;
-  font-weight: 900;
-  color: white;
-}
-
-.templete1-2-img {
-  width: 3rem;
-}
-
-.templete1-3 {
-  width: 60%;
-  margin: 0 auto;
-}
-
-.templete1-3-center {
-  width: 40%;
-  margin: 0 10% 0 5%;
-}
-
-.templete1-3-side {
-  width: 15%;
-  position: relative;
-  bottom: 50%;
-  margin: 0 0 0 5%;
-}
-
-.templete1-4 {
-  font-size: 1rem;
+#score-con {
   width: 100%;
-  color: white;
-  font-weight: 600;
   display: flex;
   justify-content: center;
 }
 
-.templete1 section {
-  display: flex;
+#result-con {
+  font-size: 5rem;
+  color: white;
   width: 100%;
-  justify-content: space-between;
-}
-
-.templete1 section img {
-  margin: 0 4%;
-  width: 20%;
-}
-
-.templete2 {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+}
+
+.score {
+  width: 6rem;
+  border-bottom: 4px solid #ffff;
+  height: auto;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-around;
-  height: 100%;
+  font-family: 'score';
+  color: #E63D78;
+  font-size: 6rem;
+  text-shadow: 3px 3px 0 #fff,
+  -5px 5px 0 #fff,
+  5px -5px 0 #fff,
+  -5px -5px 0 #fff,
+  0px 5px 0 #fff,
+  0px -5px 0 #fff,
+  -5px 0px 0 #fff,
+  5px 0px 0 #fff,
+  5px 5px 0 #fff,
+  -5px 5px 0 #fff,
+  5px -5px 0 #fff,
+  -5px -5px 0 #fff,
+  0px 5px 0 #fff,
+  0px -5px 0 #fff,
+  -5px 0px 0 #fff,
+  5px 0px 0 #fff,
+  5px 5px 0 #fff,
+  -5px 5px 0 #fff,
+  5px -5px 0 #fff,
+  -5px -5px 0 #fff,
+  5px 5px 0 #fff,
+  -5px 5px 0 #fff,
+  5px -5px 0 #fff,
+  -5px -5px 0 #fff;
 }
 
-.templete2 section {
-  margin: 0 auto;
+#gohome {
+  width: 8%;
+  cursor: pointer;
 }
 
-.templete2 section img {
-  
-}
-
-.templete2-3-center {
-  margin: 0 10%;
-  width: 20%;
-}
-
-.templete2-3-side {
-  margin: 10% 5%;
-  width: 20%;
+.index {
+  color: #ffff;
+  font-size: 2rem;
+  display: flex;
+  align-items: flex-end;
 }
 
 
-
-/* tablet rules */
-
-@media screen and (min-width: 650px) {
-  #home-container button img{
-    width: 13rem;
+/* teblet rules */
+@media screen and (min-width: 600px) {
+  .score {
+    width: 10rem;
+    font-size: 10rem;
   }
-  .templete1-2 {
+
+  .index {
     font-size: 3rem;
   }
 
-  .templete1-4 {
-    font-size: 1.8rem;
+  #result-con {
+    font-size: 7rem;
   }
-  
 }
 
 /* desktop rules */
 
 @media screen and (min-width: 1024px) {
-  #home-container button img{
-    width: 18rem;
+  .score {
+    width: 15rem;
+    font-size: 15rem;
   }
 
-  .templete1-2 {
+  .index {
     font-size: 4rem;
   }
 
-  .templete1-4 {
-    font-size: 2.8rem;
+  #result-con {
+    font-size: 7rem;
   }
-
-  /* .templete section img {
-    width: 16rem;
-  } */
 }
+

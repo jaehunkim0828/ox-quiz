@@ -13,11 +13,7 @@ function Home(props: any) {
 
   return (
     <div id="home-container">
-      <button
-        onClick={() => {
-          history.push('/one');
-        }}
-      ><img src={start} alt='start-button' /></button>
+      <img onClick={() => history.push('/one')}src={start} alt='start-button' />
     </div>
   );
 }
