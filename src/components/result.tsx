@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
 import { withRouter } from 'react-router-dom';
@@ -11,6 +11,18 @@ function Result(props: any) {
   const { history } = props;
   const score = useSelector((state: RootState) => state.quizReducer.count);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      history.push('/')
+      dispatch(resetQuiz());
+    }, 15000);
+    console.log('start');
+    return () => {
+      console.log('done');
+      clearTimeout(timeout);
+    }
+  }, []);
 
   return (
     <div className="result">

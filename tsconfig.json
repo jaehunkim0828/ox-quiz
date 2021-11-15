@@ -1,6 +1,10 @@
 {
   "compilerOptions": {
     "target": "es5",
+    "typeRoots": [
+      "node_modules/@types",
+      "custom_typings/"
+    ],
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,5 +26,5 @@
   },
   "include": [
     "src"
-  ]
+, "custon_typings/audio.d.ts"  ]
 }

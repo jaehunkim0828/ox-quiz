@@ -4,8 +4,10 @@ import {
   Route,
   Switch,
 } from "react-router-dom";
+// import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
-import './App.css';
+
+import './App.scss';
 import Fifth from './components/fifth';
 import FifthA from './components/fifthA';
 import First from './components/first';
@@ -23,7 +25,9 @@ import SixthA from './components/sixthA';
 import Third from './components/third';
 import ThirdA from './components/thirdA';
 
+
 function App() {
+
   return (
     <Router>
       <Fragment>

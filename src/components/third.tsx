@@ -1,15 +1,20 @@
 import React, { useEffect } from 'react';
 import { withRouter } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
+import useSound from 'use-sound';
 
 import { increaseQuiz, resetQuiz } from '../action/quizAct';
 import no from '../images/quiz1/no.png';
 import yes from '../images/quiz1/yes.png';
+import noS from '../sounds/no.mp3';
+import yesS from '../sounds/yes.mp3';
 
 
 function Third(props: any) {
   const { history } = props;
   const dispatch = useDispatch();
+  const [noPlay] = useSound(noS);
+  const [yesPlay] = useSound(yesS);
 
   useEffect(() => {
     const timeout = setTimeout(() => {
@@ -26,8 +31,8 @@ function Third(props: any) {
   return (
     <div className="quiz-container3">
         <div className="center">
-          <img onClick={() => history.push('/threeA')}src={yes} alt="Q"/>
-          <img onClick={() => {history.push('/threeA'); dispatch(increaseQuiz())}}src={no} alt="Q"/>
+          <img onClick={() => {noPlay(); history.push('/threeA')}}src={yes} alt="Q"/>
+          <img onClick={() => {yesPlay(); history.push('/threeA'); dispatch(increaseQuiz())}}src={no} alt="Q"/>
         </div>
     </div>
   )
